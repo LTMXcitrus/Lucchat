@@ -1,0 +1,20 @@
+<div class="card">
+    <div class="card-content">
+        <div class="card-title"><h5>Conversation with {{user.surname}}</h5></div>
+        <div style="overflow: auto;height:350px">
+            <ul>
+                <li *ngFor="let message of conversation.messages" class="{{message.getMessageType()}}">
+                    <div class="chip" [style.background-color]="getBubbleColor(message)">
+                        <span class="message">{{message.content}}</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="card-action">
+        <label for="message">Message</label>
+        <input id="message" type="text" #message class="validate" (keyup.enter)="send(message)" (click)="messageRead()"
+               placeholder="Type your message here"/>
+        <button class="waves-effect waves-light btn" (click)="send(message)">Send</button>
+    </div>
+</div>

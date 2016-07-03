@@ -1,0 +1,41 @@
+.sent{
+    text-align: right;
+}
+
+.message {
+     display:block;
+     width:100%;
+     word-wrap:break-word;
+ }
+
+.mynav{
+    padding:25px;
+}
+
+header, main, footer, nav, .mynavbar {
+    padding-left: 240px;
+}
+
+@media only screen and (max-width : 992px) {
+    header, main, footer {
+        padding-left: 0;
+    }
+}
+li{
+    padding:3px;
+}
+
+.mychip{
+    padding:3px;
+    cursor: hand;
+}
+
+body, my-app {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
