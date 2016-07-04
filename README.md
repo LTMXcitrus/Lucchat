@@ -1,8 +1,8 @@
-<u>Installation</u>:
+***Installation***:
 
 npm install
 
 
-Launch:
+***Launch***:
 
 npm start
